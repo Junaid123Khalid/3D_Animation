@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "http://www.web3d.org/specifications/x3d-3.3.dtd">
+<X3D profile="Interchange" version="3.3" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.3.xsd">
+    <Scene>
+        <!-- Sprite Can Shape -->
+        <Shape>
+            <Appearance>
+                <Material diffuseColor="1 1 1" /> <!-- White color -->
+            </Appearance>
+            <!-- Increase height and radius -->
+            <Cylinder height="5" radius="1.4" /> <!-- Adjust height and radius as needed -->
+        </Shape>
+        
+        <!-- Sprite Logo -->
+        <Transform translation="0 3 0"> <!-- Adjust position based on can height -->
+            <Shape>
+                <Appearance>
+                    <Material diffuseColor="0 0 0" /> <!-- Black color for logo -->
+                </Appearance>
+                <!-- Example: Sprite Logo as Text -->
+                <Text string="Sprite" solid="true">
+                    <FontStyle family="SANS" justify="MIDDLE" size="0.5" />
+                </Text>
+            </Shape>
+        </Transform>
+            
+    </Scene>
+</X3D>
